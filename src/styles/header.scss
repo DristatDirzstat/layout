@@ -1,3 +1,44 @@
-.header{
-  color:green;
+@import "variables";
+
+.header {
+
+}
+
+.header__container {
+  padding: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: url('/public/img/back_null_percents.jpg') 80% 20%;
+    filter: brightness(40%);
+    z-index: -1;
+  }
+}
+
+.header__title {
+  padding-top: 60px;
+  margin-bottom: 10px;
+
+  font-family: $font-circe-thin;
+  font-size: 40px;
+  line-height: 1.2;
+
+  color: #fff;
+}
+
+.header__description {
+  margin-bottom: 35px;
+
+  font-family: $font-circe-thin;
+  font-size: 24px;
+  line-height: 1.34;
+
+  color: #D2D2D2;
 }

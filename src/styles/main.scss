@@ -1,11 +1,17 @@
 @import "fonts";
 @import "variables";
 @import "header";
+@import "components/btn";
 
 
 
 html {
   font-family: $font-circe;
+  font-size:16px;
+  * {
+    box-sizing: border-box;
+  }
+
 }
 
 body {
