@@ -1,0 +1,21 @@
+@import "../variables";
+
+.payments{
+  text-align: center;
+  padding: 30px 24px;
+}
+
+.payments__title{
+  padding: 0 70px;
+  margin: 0 auto 10px;
+  font-family: $font-circe-bold;
+  font-size:30px;
+}
+
+.payments__remark{
+  padding-top:20px;
+
+  font-family: "Circe-Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height:1.24;
+}

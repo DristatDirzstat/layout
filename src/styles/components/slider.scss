@@ -1,0 +1,42 @@
+@import "../variables";
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+
+.slider__item {
+  display: none;
+
+  &.slider__item--active {
+    display: block;
+  }
+
+}
+
+.slider__btn{
+  display: block;
+  
+  width: 9px;
+  height: 9px;
+
+  border: 2px solid $dark-color;
+  cursor: pointer;
+  
+  &.slider__btn--prev{
+    border-bottom: none;
+    border-right:none;
+    transform: rotate(-45deg);
+  }
+
+  &.slider__btn--next{
+    border-bottom: none;
+    border-left:none;
+    transform: rotate(45deg);
+  }
+}
+

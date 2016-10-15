@@ -1,0 +1,23 @@
+@import "../variables";
+
+.commission-info{
+  padding: 45px 24px;
+  background: $yellow-color;
+
+}
+
+.commission-info__percent{
+  margin: 0 auto 50px;
+
+  width: 230px;
+  height: 180px;
+
+  background: url('/public/img/zero.svg') no-repeat top left;
+  background-size: contain;
+}
+
+.commission-info__description{
+  text-align: center;
+  font-size: 22px;
+  line-height:1.34;
+}

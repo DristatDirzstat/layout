@@ -12,7 +12,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  background: #fece2f;
+  background: $yellow-color;
   color: $dark-color;
 
   &::after {
@@ -26,8 +26,8 @@
     margin: auto;
 
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 9px;
+    height: 9px;
 
     border-top: 2px solid $dark-color;
     border-right: 2px solid $dark-color;

@@ -1,11 +1,11 @@
-@import "variables";
+@import "../variables";
 
 .header {
 
 }
 
 .header__container {
-  padding: 24px;
+  padding: 24px 24px 30px 24px;
   position: relative;
 
   &::after {
