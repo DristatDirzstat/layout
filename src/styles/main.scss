@@ -1,8 +1,11 @@
 @import "fonts";
 @import "variables";
+
 @import "sections/header";
 @import "sections/comissions";
 @import "sections/payments";
+@import "sections/footer";
+
 @import "components/btn";
 @import "components/slider";
 
@@ -28,6 +31,7 @@ ol, ul {
 ol, ul, li{
   padding: 0;
 }
+
 .container {
   max-width: 1280px;
   margin: 0 auto;

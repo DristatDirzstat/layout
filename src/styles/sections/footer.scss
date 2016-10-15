@@ -1,0 +1,61 @@
+@import "../variables";
+
+.footer__container{
+  background: #232323;
+  color: #fff;
+  padding: 24px 0 ;
+
+}
+
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+  margin-bottom:10px;
+}
+
+.contacts__link {
+  display: block;
+
+  img {
+    height: 24px;
+  }
+}
+
+.about{
+  display: flex;
+  justify-content:space-around;
+  margin-bottom: 24px;
+}
+
+.about__link{
+  text-decoration: none;
+  font-size:16px;
+  line-height:1.5;
+
+  color: #fff;
+}
+
+
+.footer__divider{
+  width: 100%;
+  border-bottom: 1px solid #616161;
+}
+
+.company-registration{
+  padding: 24px;
+
+  font-family: $font-arialMt;
+  font-size: 11px;
+  line-height: 1.46;
+  text-align: center;
+
+  color:#616161;
+
+  a{
+    color:#616161;
+  }
+}
+
