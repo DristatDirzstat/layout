@@ -26,6 +26,10 @@ gulp.task('styles', function () {
 		.pipe(gulpIf(isDevelopment, sourcemaps.write()))
 		.pipe(gulp.dest('./public'))
 });
+gulp.task('styles:vendor', function () {
+	return gulp.src('./src/vendors/**.css', {base: './src'})
+		.pipe(gulp.dest('./public/'))
+});
 
 gulp.task('clean', function () {
 	return del('./public')
@@ -38,7 +42,7 @@ gulp.task('assets', function () {
 
 gulp.task('build', gulp.series(
 	'clean',
-	gulp.parallel('styles', 'assets')
+	gulp.parallel('styles', 'styles:vendor', 'assets')
 ));
 
 
