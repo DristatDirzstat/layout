@@ -1,0 +1,38 @@
+@import "../variables";
+
+.btn {
+  position: relative;
+
+  padding: 28px;
+
+  display: inline-block;
+  min-width: 350px;
+
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: #fece2f;
+  color: $dark-color;
+
+  &::after {
+    content: " ";
+
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    border-top: 2px solid $dark-color;
+    border-right: 2px solid $dark-color;
+
+    transform: rotate(45deg);
+
+  }
+}
