@@ -51,7 +51,13 @@
   left: 30px;
   bottom: -30px;
 
+  display: none;
+
   font-size: 11px;
   color: #9b9b9b;
   line-height: 1.46;
+
+  @media (min-width: $screen-middle-width) {
+    display: block;
+  }
 }
