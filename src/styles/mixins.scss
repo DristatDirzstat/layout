@@ -1,0 +1,10 @@
+@mixin arrow($color, $deg, $size:9px, $border-size:2px){
+  display: block;
+  width: $size;
+  height: $size;
+
+  border-top: $border-size solid $color;
+  border-right: $border-size solid $color;
+
+  transform: rotate($deg);
+}

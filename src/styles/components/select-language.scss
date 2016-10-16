@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixins";
+
+.select-language{
+  position: relative;
+
+  display: inline-block;
+
+  padding-right: 19px;
+
+  text-transform: uppercase;
+
+  color:$white-color;
+  cursor: pointer;
+
+  &::after{
+    content: " ";
+
+    position: absolute;
+    right: 0;
+    top: -2px;
+    bottom: 0;
+
+
+    @include arrow(#bebebe, 135deg, 8px, 1px);
+  }
+
+
+}

@@ -1,19 +1,24 @@
 @import "../variables";
+@import "../mixins";
 
 .btn {
   position: relative;
 
-  padding: 28px;
+  padding: 30px;
 
   display: inline-block;
   min-width: 350px;
 
-  font-size: 12px;
+  font-size: 11px;
   text-decoration: none;
   text-transform: uppercase;
 
   background: $yellow-color;
   color: $dark-color;
+  
+  @media (min-width: $screen-middle-width) {
+    min-width: 304px;
+  }
 
   &::after {
     content: " ";
@@ -25,14 +30,7 @@
 
     margin: auto;
 
-    display: block;
-    width: 9px;
-    height: 9px;
-
-    border-top: 2px solid $dark-color;
-    border-right: 2px solid $dark-color;
-
-    transform: rotate(45deg);
+    @include arrow($dark-color, 45deg);
 
   }
 }

@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .slider{
   display: flex;
@@ -20,22 +21,16 @@
 
 .slider__btn{
   display: block;
-  
-  width: 9px;
-  height: 9px;
 
-  border: 2px solid $dark-color;
   cursor: pointer;
-  
+
+  @include arrow($dark-color, 0);
+
   &.slider__btn--prev{
-    border-bottom: none;
-    border-right:none;
-    transform: rotate(-45deg);
+    transform: rotate(230deg);
   }
 
   &.slider__btn--next{
-    border-bottom: none;
-    border-left:none;
     transform: rotate(45deg);
   }
 }
