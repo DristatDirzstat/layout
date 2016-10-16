@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $screen-middle-width) {
-    padding: 48px $big-horizontal-padding;
+    padding: 48px $big-horizontal-padding 65px $big-horizontal-padding;
   }
 }
 
@@ -38,7 +38,7 @@
   color: $white-color;
 
   @media (min-width: $screen-middle-width) {
-    padding-top: 94px;
+    padding-top: 98px;
 
     font-size: 66px;
     line-height: 1.1;
@@ -47,6 +47,7 @@
 
 .header__description {
   margin-bottom: 35px;
+  margin-top: 22px;
 
   font-family: $font-circe-thin;
   font-size: 24px;

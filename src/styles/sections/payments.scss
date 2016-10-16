@@ -4,6 +4,9 @@
   text-align: center;
   padding: 40px 24px;
   background: $white-color;
+  @media (min-width: $screen-middle-width) {
+    padding: 40px 24px 52px;
+  }
 }
 
 .payments__title {
@@ -11,6 +14,13 @@
   margin: 0 auto 10px;
   font-family: $font-circe-bold;
   font-size: 30px;
+
+  @media (min-width: $screen-middle-width) {
+    font-name: $font-circe;
+    font-size: 40px;
+    line-height:1.2;
+
+  }
 }
 
 .payments__remark {

@@ -17,8 +17,11 @@
   border-bottom: none;
 
   @media (min-width: $screen-middle-width) {
-    padding: 29px $big-horizontal-padding;
     justify-content: center;
+
+    padding: 29px $big-horizontal-padding;
+    margin-bottom: 18px;
+
     border-bottom: 1px solid #616161;
   }
 
@@ -49,16 +52,12 @@
 
 
   @media (min-width: $screen-middle-width) {
-    flex-wrap: wrap;
 
     padding: 0 $big-horizontal-padding;
     margin-bottom: 24px;
 
     border-bottom: none;
 
-    & > * {
-      flex: 1;
-    }
   }
 }
 
