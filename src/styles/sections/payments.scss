@@ -1,22 +1,57 @@
 @import "../variables";
 
-.payments{
+.payments {
   text-align: center;
-  padding: 30px 24px;
+  padding: 40px 24px;
   background: $white-color;
 }
 
-.payments__title{
+.payments__title {
   padding: 0 70px;
   margin: 0 auto 10px;
   font-family: $font-circe-bold;
-  font-size:30px;
+  font-size: 30px;
 }
 
-.payments__remark{
-  padding-top:20px;
+.payments__remark {
+  padding-top: 50px;
+  margin: 0 auto;
 
-  font-family: "Circe-Light", "Arial", sans-serif;
+  max-width: 550px;
+
+  font-family: $font-circe-light;
   font-size: 13px;
-  line-height:1.24;
+  line-height: 1.24;
+
+  @media (min-width: $screen-middle-width) {
+    font-family: $font-circe;
+    font-size: 14px;
+    line-height:1.43;
+  }
+}
+
+.payments__form {
+  display: flex;
+  justify-content: center;
+}
+
+.payments__form__control {
+  position: relative;
+}
+
+.payments__form__input {
+  display: none;
+  @media (min-width: $screen-middle-width) {
+    display: block;
+  }
+}
+
+.payments__form__hint {
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+
+  font-size: 11px;
+  color: #9b9b9b;
+  line-height: 1.46;
 }

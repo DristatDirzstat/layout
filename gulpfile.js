@@ -9,6 +9,9 @@ const browserSync = require('browser-sync').create();
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
+const cssnano = require('gulp-cssnano');
+const imagemin = require('gulp-imagemin');
+
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -26,6 +29,7 @@ gulp.task('styles', function () {
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(gulpIf(isDevelopment, sourcemaps.write()))
+		.pipe(gulpIf(!isDevelopment, cssnano()))
 		.pipe(gulp.dest('./public'))
 });
 gulp.task('styles:vendor', function () {
@@ -39,6 +43,7 @@ gulp.task('clean', function () {
 
 gulp.task('assets', function () {
 	return gulp.src('./src/assets/**', {since: gulp.lastRun('assets')})
+		.pipe(gulpIf(!isDevelopment, imagemin()))
 		.pipe(gulp.dest('./public'));
 });
 

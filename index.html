@@ -6,7 +6,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/vendors/normalize.css">
     <link rel="stylesheet" href="public/styles/main.css">
 </head>
 <body>
@@ -86,7 +85,16 @@
                 </ul>
                 <a href="#" class="slider__btn slider__btn--next"></a>
             </div>
-            <a href="" class="btn">Открыть счет</a>
+            <form class="payments__form" action="">
+                <div class="payments__form__control">
+                    <input class="input payments__form__input" type="tel" placeholder="Мобильный телефон">
+                    <span class="payments__form__hint">Пример +71234431123</span>
+                </div>
+                <div class="payments__form__control">
+                    <input class="input payments__form__input" type="email" placeholder="Адрес электронной почты">
+                </div>
+                <button type="submit" class="btn">Открыть счет</button>
+            </form>
             <p class="payments__remark">По некоторым <a href="#">способам ввода/вывода средств</a> действуют ограничения
                 по размеру минимальной суммы операции для осуществления транзакции без комисии. </p>
         </section>

@@ -10,11 +10,24 @@
 }
 
 
+.slider__items{
+  @media (min-width: $screen-middle-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .slider__item {
   display: none;
 
   &.slider__item--active {
     display: block;
+  }
+
+  @media (min-width: $screen-middle-width) {
+    display: block;
+    margin: 20px 30px;
   }
 
 }
@@ -23,6 +36,11 @@
   display: block;
 
   cursor: pointer;
+
+  @media (min-width: $screen-middle-width) {
+    display: none;
+  }
+
 
   @include arrow($dark-color, 0);
 
