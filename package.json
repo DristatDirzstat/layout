@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.17.3",
+    "critical": "^0.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-if": "^2.0.1",

@@ -11,6 +11,7 @@ const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const imagemin = require('gulp-imagemin');
+const critical = require('critical');
 
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
@@ -32,6 +33,7 @@ gulp.task('styles', function () {
 		.pipe(gulpIf(!isDevelopment, cssnano()))
 		.pipe(gulp.dest('./public'))
 });
+
 gulp.task('styles:vendor', function () {
 	return gulp.src('./src/vendors/**.css', {base: './src'})
 		.pipe(gulp.dest('./public/'))
@@ -47,9 +49,22 @@ gulp.task('assets', function () {
 		.pipe(gulp.dest('./public'));
 });
 
+gulp.task('critical',function (cb) {
+	return critical.generate({
+		inline: true,
+		base: '.',
+		src: 'index.html',
+		dest: 'index.html',
+		minify: true,
+		width: 640,
+		height: 480
+	});
+});
+
 gulp.task('build', gulp.series(
 	'clean',
-	gulp.parallel('styles', 'styles:vendor', 'assets')
+	gulp.parallel('styles', 'styles:vendor', 'assets'),
+	'critical'
 ));
 
 
