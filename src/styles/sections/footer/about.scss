@@ -1,0 +1,78 @@
+@import "../../variables";
+
+.about {
+  padding: 0 32px;
+
+  display: flex;
+  justify-content: space-around;
+
+  border-bottom: 1px solid #616161;
+
+  @media (min-width: $screen-middle-width) {
+
+    padding: 0 $big-horizontal-padding;
+    margin-bottom: 24px;
+
+    border-bottom: none;
+
+  }
+}
+
+.about__items {
+  margin-left: 0;
+
+  &.no-mobile {
+    display: none;
+  }
+
+  &:last-of-type {
+    .about__link {
+      color: $white-color;
+    }
+  }
+
+  @media (min-width: $screen-middle-width) {
+    &.no-mobile {
+      display: block;
+    }
+    &:not(:first-of-type) {
+      margin-left: 30px;
+    }
+  }
+
+}
+
+.about__item {
+  margin-bottom: 5px;
+  min-height: 24px;
+
+  &:first-of-type {
+    .about__link {
+      color: $white-color;
+    }
+  }
+
+  &:not(:first-of-type) {
+    display: none;
+  }
+
+  @media (min-width: $screen-middle-width) {
+    &:not(:first-of-type) {
+      display: block;
+    }
+  }
+}
+
+.about__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #9b9b9b;
+
+  @media (min-width: $screen-middle-width) {
+    font-family: $font-circe-light;
+    text-decoration: underline;
+  }
+
+}

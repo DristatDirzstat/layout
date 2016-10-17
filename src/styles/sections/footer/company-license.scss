@@ -1,0 +1,85 @@
+@import "../../variables";
+
+
+.company-registration {
+  display: flex;
+  padding: 24px;
+}
+
+.company-registration__text {
+  flex: 1 70%;
+
+  font-family: $font-arialMt;
+  font-size: 11px;
+  line-height: 1.46;
+  text-align: center;
+
+  color: #616161;
+
+  a {
+    color: #616161;
+  }
+
+  @media (min-width: $screen-middle-width) {
+    text-align: left;
+  }
+
+}
+
+.license-img {
+  flex: 1 30%;
+
+  display: none;
+
+  @media (min-width: $screen-middle-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 280px;
+  }
+}
+
+.footer-sprite {
+  background-image: url('/public/img/footer-sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+  &:first-of-type {
+    margin-left: 70px;
+  }
+}
+
+.footer-sprite--beliz {
+  width: 60px;
+  height: 60px;
+  background-position: 0 0;
+}
+
+.footer-sprite--cascade {
+  width: 80px;
+  height: 47px;
+  background-position: -60px 0;
+}
+
+.footer-sprite--icon-nqa {
+  width: 42px;
+  height: 58px;
+  background-position: -140px 0;
+}
+
+.footer-sprite--icon-sm {
+  width: 66px;
+  height: 21px;
+  background-position: -182px 0;
+}
+
+.footer-sprite--sysec {
+  width: 116px;
+  height: 60px;
+  background-position: -248px 0;
+}
+
+
