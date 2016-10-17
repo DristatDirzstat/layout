@@ -15,7 +15,9 @@
     align-items: flex-end;
 
     & > * {
-      flex: 1 0 0;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0px;
     }
   }
 }
