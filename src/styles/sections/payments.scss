@@ -2,7 +2,7 @@
 
 .payments {
   text-align: center;
-  padding: 40px 24px;
+  padding: 35px 24px 75px;
   background: $white-color;
   @media (min-width: $screen-middle-width) {
     padding: 40px 24px 52px;
@@ -24,7 +24,7 @@
 }
 
 .payments__remark {
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 0 auto;
 
   max-width: 550px;
@@ -34,6 +34,7 @@
   line-height: 1.24;
 
   @media (min-width: $screen-middle-width) {
+    padding-top: 50px;
     font-family: $font-circe;
     font-size: 14px;
     line-height:1.43;

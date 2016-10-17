@@ -3,7 +3,7 @@
 .commission-info {
   position: relative;
 
-  padding: 50px 24px;
+  padding: 50px 24px 30px;
   background: $yellow-color;
 
   @media (min-width: $screen-middle-width) {
@@ -25,7 +25,7 @@
 }
 
 .commission-info__percent__img {
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
 
   width: 230px;
   height: 180px;
