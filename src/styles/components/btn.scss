@@ -17,7 +17,15 @@
   background: $yellow-color;
   border: none;
   color: $dark-color;
-  
+  cursor: pointer;
+
+  &:hover {
+    color: $gray-color;
+    &::after {
+      border-color: $gray-color;
+    }
+  }
+
   @media (min-width: $screen-middle-width) {
     min-width: 304px;
   }
